@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --red: #EE204D;
+  --blue: #007FFF;
+  --light-blue: #7CB9E8;
+  --dark-blue: #002244;
+  --yellow: #FEBE10;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  background: rgb(0, 34, 68);
+  background: linear-gradient(0deg, rgba(0,34,68,1) 0%, rgba(29,66,138,1) 100%);
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-content {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--light-blue);
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heading {
+  width: 7rem;
+  line-height: 1.5rem;
+}
+
+.score-board {
+  text-align: center;
+  color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.player-score-board, .comp-score-board {
+  width: 5rem;
+  height: 6rem;
+  background-color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 0.75rem;
+}
+
+.score-board p {
+  font-size: 0.75rem;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.choices {
+  margin: 0 auto;
+  width: 20rem;
+  height: 18rem;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3rem;
+}
+
+.choice, .result {
+  height: 8rem;
+  width: 8rem;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+  transition: 100ms;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+#rock {
+  border: 0.75rem solid var(--red);
+}
+
+#paper {
+  border: 0.75rem solid var(--blue);
+}
+
+#scissor {
+  border: 0.75rem solid var(--yellow);
+}
+
+.choice img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.result-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.result-content {
+  display: flex;
+  gap: 3rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.play-again-button, .reset-game-button {
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+}
+
+.player-choice, .comp-choice {
+  height: 10rem;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.triangle {
+  z-index: -1;
+  position: absolute;
+  top: 3rem;
+}
+
+.triangle img {
+  height: 12.5rem;
+}
+
+.msg {
+  background-color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  color: var(--dark-blue);
+}

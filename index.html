@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="header-content">
+        <div class="heading">
+          ROCK PAPER SCISSORS
+        </div>
+        <div class="score-board">
+          <div class="player-score-board">
+            <p>PLAYER</p>
+            <h2 id="player-score">0</h2>
+          </div>
+          <div class="comp-score-board">
+            <p>COMPUTER</p>
+            <h2 id="comp-score">0</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="game">
+        <div class="choices">
+          <div class="choice" id="rock">
+            <img src="images/rock.svg" alt="rock"/>
+          </div>
+          <div class="choice" id="paper">
+            <img src="images/paper.svg" alt="paper"/>
+          </div>
+          <div class="choice" id="scissor">
+            <img src="images/scissor.svg" alt="scissor"/>
+          </div>
+        </div>
+        <div class="triangle">
+          <img src="images/triangle.svg" alt="triangle">
+        </div>
+
+        <div class="result-container">
+          <div class="result-content">
+            <div class="player-choice">
+              <p>PLAYER CHOSE</p>
+              <div class="result" id="player-choice-img">
+                <img src="images/rock.svg" alt="player choice" id="player">
+              </div>
+            </div>
+            <div class="comp-choice">
+              <p>COMPUTER CHOSE</p>
+              <div class="result" id="comp-choice-img">
+                <img src="images/scissor.svg" alt="computer choice" id="computer">
+              </div>
+            </div>
+          </div>
+
+          <div class="msg">
+            PLAY YOUR MOVE
+          </div>
+
+          <div class="buttons">
+            <button class="play-again-button">
+              PLAY AGAIN
+            </button>
+            <button class="reset-game-button">
+              RESET GAME
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
