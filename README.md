@@ -14,4 +14,4 @@ Enjoy the classic Rock, Paper, Scissors game brought to life with HTML, CSS, and
  <li>Play the live demo or clone the repo and open index.html in your browser.</li>
 </ol>
 
-Demo: https://vishalpawar26.github.io/Rock-Paper-Scissor-Game/
+<b>Demo:</b> https://vishalpawar26.github.io/Rock-Paper-Scissor-Game/
